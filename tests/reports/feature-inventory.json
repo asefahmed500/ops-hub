@@ -1,0 +1,204 @@
+[
+  {
+    "role": "trainee",
+    "path": "/",
+    "http": 200,
+    "buttons": [
+      "+ Add task",
+      "+ Add today's log"
+    ],
+    "links": [
+      "Home→/",
+      "Rotation→/rotation",
+      "Log→/log",
+      "Growth→/growth",
+      "Me→/me"
+    ],
+    "inputs": []
+  },
+  {
+    "role": "trainee",
+    "path": "/rotation",
+    "http": 200,
+    "buttons": [],
+    "links": [
+      "Home→/",
+      "Rotation→/rotation",
+      "Log→/log",
+      "Growth→/growth",
+      "Me→/me"
+    ],
+    "inputs": []
+  },
+  {
+    "role": "trainee",
+    "path": "/log",
+    "http": 200,
+    "buttons": [
+      "Save log"
+    ],
+    "links": [
+      "Home→/",
+      "Rotation→/rotation",
+      "Log→/log",
+      "Growth→/growth",
+      "Me→/me"
+    ],
+    "inputs": [
+      {
+        "ph": "Prepared the campaign report…",
+        "type": "textarea"
+      }
+    ]
+  },
+  {
+    "role": "trainee",
+    "path": "/growth",
+    "http": 200,
+    "buttons": [
+      "+10% progress",
+      "+10% progress",
+      "+10% progress",
+      "+10% progress",
+      "+10% progress",
+      "Export my logs (CSV)"
+    ],
+    "links": [
+      "Home→/",
+      "Rotation→/rotation",
+      "Log→/log",
+      "Growth→/growth",
+      "Me→/me"
+    ],
+    "inputs": []
+  },
+  {
+    "role": "trainee",
+    "path": "/me",
+    "http": 200,
+    "buttons": [
+      "Sign out"
+    ],
+    "links": [
+      "Home→/",
+      "Rotation→/rotation",
+      "Log→/log",
+      "Growth→/growth",
+      "Me→/me"
+    ],
+    "inputs": [
+      {
+        "ph": "",
+        "type": "checkbox"
+      }
+    ]
+  },
+  {
+    "role": "hr",
+    "path": "/",
+    "http": 200,
+    "buttons": [],
+    "links": [
+      "Overview→/",
+      "Trainees→/trainees",
+      "Reviews→/reviews",
+      "Reports→/reports",
+      "Settings→/settings"
+    ],
+    "inputs": []
+  },
+  {
+    "role": "hr",
+    "path": "/trainees",
+    "http": 200,
+    "buttons": [],
+    "links": [
+      "Overview→/",
+      "Trainees→/trainees",
+      "Reviews→/reviews",
+      "Reports→/reports",
+      "Settings→/settings"
+    ],
+    "inputs": [
+      {
+        "ph": "Search trainee or department",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "role": "hr",
+    "path": "/reviews",
+    "http": 200,
+    "buttons": [
+      "Open review",
+      "Open review"
+    ],
+    "links": [
+      "Overview→/",
+      "Trainees→/trainees",
+      "Reviews→/reviews",
+      "Reports→/reports",
+      "Settings→/settings"
+    ],
+    "inputs": []
+  },
+  {
+    "role": "hr",
+    "path": "/reports",
+    "http": 200,
+    "buttons": [
+      "Export logs (CSV)"
+    ],
+    "links": [
+      "Overview→/",
+      "Trainees→/trainees",
+      "Reviews→/reviews",
+      "Reports→/reports",
+      "Settings→/settings"
+    ],
+    "inputs": []
+  },
+  {
+    "role": "hr",
+    "path": "/settings",
+    "http": 200,
+    "buttons": [
+      "Share invite code",
+      "Sign out"
+    ],
+    "links": [
+      "Overview→/",
+      "Trainees→/trainees",
+      "Reviews→/reviews",
+      "Reports→/reports",
+      "Settings→/settings"
+    ],
+    "inputs": [
+      {
+        "ph": "",
+        "type": "checkbox"
+      },
+      {
+        "ph": "",
+        "type": "checkbox"
+      }
+    ]
+  },
+  {
+    "role": "platform",
+    "path": "/platform",
+    "http": 200,
+    "buttons": [],
+    "links": [],
+    "inputs": []
+  },
+  {
+    "role": "platform",
+    "path": "/platform/tenants",
+    "http": 200,
+    "buttons": [],
+    "links": [],
+    "inputs": []
+  }
+]

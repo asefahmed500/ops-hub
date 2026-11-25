@@ -1,0 +1,1209 @@
+{
+  "startedAt": "2026-11-25T00:42:34.930Z",
+  "finishedAt": "2026-11-25T00:59:49.723Z",
+  "counts": {
+    "PASS": 163,
+    "FAIL": 0,
+    "BLOCKED": 0,
+    "NOT_TESTED": 0
+  },
+  "cases": [
+    {
+      "phase": "setup",
+      "name": "environment: API healthy and web reachable",
+      "status": "PASS",
+      "detail": "API 200, web 200",
+      "at": "2026-11-25T00:42:36.997Z"
+    },
+    {
+      "phase": "PHASE 3 — Authentication & Authorization",
+      "name": "public page loads: /welcome",
+      "status": "PASS",
+      "detail": "HTTP 200",
+      "at": "2026-11-25T00:42:44.878Z"
+    },
+    {
+      "phase": "PHASE 3 — Authentication & Authorization",
+      "name": "public page loads: /sign-in",
+      "status": "PASS",
+      "detail": "HTTP 200",
+      "at": "2026-11-25T00:42:52.555Z"
+    },
+    {
+      "phase": "PHASE 3 — Authentication & Authorization",
+      "name": "public page loads: /sign-up",
+      "status": "PASS",
+      "detail": "HTTP 200",
+      "at": "2026-11-25T00:42:59.772Z"
+    },
+    {
+      "phase": "PHASE 3 — Authentication & Authorization",
+      "name": "public page loads: /join",
+      "status": "PASS",
+      "detail": "HTTP 200",
+      "at": "2026-11-25T00:43:07.164Z"
+    },
+    {
+      "phase": "PHASE 3 — Authentication & Authorization",
+      "name": "public page loads: /forgot-password",
+      "status": "PASS",
+      "detail": "HTTP 200",
+      "at": "2026-11-25T00:43:14.538Z"
+    },
+    {
+      "phase": "PHASE 3 — Authentication & Authorization",
+      "name": "sign-in empty validation shows both errors",
+      "status": "PASS",
+      "detail": "email=true password=true",
+      "at": "2026-11-25T00:43:21.610Z"
+    },
+    {
+      "phase": "PHASE 3 — Authentication & Authorization",
+      "name": "invalid password shows server error",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:43:21.795Z"
+    },
+    {
+      "phase": "PHASE 3 — Authentication & Authorization",
+      "name": "invalid credentials keep user on sign-in",
+      "status": "PASS",
+      "detail": "http://localhost:3100/sign-in",
+      "at": "2026-11-25T00:43:21.795Z"
+    },
+    {
+      "phase": "PHASE 3 — Authentication & Authorization",
+      "name": "unauthenticated /platform redirects to sign-in",
+      "status": "PASS",
+      "detail": "http://localhost:3100/sign-in",
+      "at": "2026-11-25T00:43:31.262Z"
+    },
+    {
+      "phase": "PHASE 3 — Authentication & Authorization",
+      "name": "malformed email rejected by client validation",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:43:38.095Z"
+    },
+    {
+      "phase": "PHASE 3 — Authentication & Authorization",
+      "name": "sign-in does not advertise unsupported phone login",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:43:38.104Z"
+    },
+    {
+      "phase": "PHASE 3 — Authentication & Authorization",
+      "name": "HR login routes to HR workspace",
+      "status": "PASS",
+      "detail": "http://localhost:3100/",
+      "at": "2026-11-25T00:43:54.646Z"
+    },
+    {
+      "phase": "PHASE 3 — Authentication & Authorization",
+      "name": "HR /auth/me returns hr role",
+      "status": "PASS",
+      "detail": "{\"active\":true,\"createdAt\":\"2026-11-02T18:32:59.078Z\",\"id\":\"usr_hr\",\"tenantId\":\"tnt_demo\",\"name\":\"Mr. Rahman\",\"email\":\"hr@opshub.local\",\"role\":\"hr\",\"companyName\":\"MTO Compass Demo\"}",
+      "at": "2026-11-25T00:43:54.668Z"
+    },
+    {
+      "phase": "PHASE 3 — Authentication & Authorization",
+      "name": "session persists after reload",
+      "status": "PASS",
+      "detail": "http://localhost:3100/",
+      "at": "2026-11-25T00:44:04.080Z"
+    },
+    {
+      "phase": "PHASE 3 — Authentication & Authorization",
+      "name": "JWT stored in localStorage",
+      "status": "PASS",
+      "detail": "len=220",
+      "at": "2026-11-25T00:44:04.085Z"
+    },
+    {
+      "phase": "PHASE 3 — Authentication & Authorization",
+      "name": "sign out returns to sign-in",
+      "status": "PASS",
+      "detail": "http://localhost:3100/sign-in",
+      "at": "2026-11-25T00:44:14.842Z"
+    },
+    {
+      "phase": "PHASE 3 — Authentication & Authorization",
+      "name": "token cleared on sign out",
+      "status": "PASS",
+      "detail": "token=null",
+      "at": "2026-11-25T00:44:14.850Z"
+    },
+    {
+      "phase": "PHASE 3 — Authentication & Authorization",
+      "name": "company registration shows invite code step",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:44:22.571Z"
+    },
+    {
+      "phase": "PHASE 3 — Authentication & Authorization",
+      "name": "invite code has expected format",
+      "status": "PASS",
+      "detail": "MTO-QA-1313",
+      "at": "2026-11-25T00:44:22.576Z"
+    },
+    {
+      "phase": "PHASE 3 — Authentication & Authorization",
+      "name": "new HR enters own workspace",
+      "status": "PASS",
+      "detail": "http://localhost:3100/",
+      "at": "2026-11-25T00:44:24.523Z"
+    },
+    {
+      "phase": "PHASE 3 — Authentication & Authorization",
+      "name": "duplicate email registration rejected",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:44:39.711Z"
+    },
+    {
+      "phase": "PHASE 3 — Authentication & Authorization",
+      "name": "invalid invite code rejected",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:44:47.316Z"
+    },
+    {
+      "phase": "PHASE 3 — Authentication & Authorization",
+      "name": "trainee join lands in trainee workspace",
+      "status": "PASS",
+      "detail": "http://localhost:3100/",
+      "at": "2026-11-25T00:44:56.986Z"
+    },
+    {
+      "phase": "PHASE 3 — Authentication & Authorization",
+      "name": "joined account role is trainee",
+      "status": "PASS",
+      "detail": "{\"id\":\"usr_mwveiy3vmxz4y7\",\"tenantId\":\"tnt_mwvei91ij0aey4\",\"name\":\"QA Trainee\",\"email\":\"qa.trainee.7462346@example.test\",\"dept\":\"QA Dept\",\"role\":\"trainee\",\"acti",
+      "at": "2026-11-25T00:44:57.007Z"
+    },
+    {
+      "phase": "PHASE 3 — Authentication & Authorization",
+      "name": "trainee cannot open /platform UI",
+      "status": "PASS",
+      "detail": "http://localhost:3100/",
+      "at": "2026-11-25T00:45:06.532Z"
+    },
+    {
+      "phase": "PHASE 3 — Authentication & Authorization",
+      "name": "two roles can be signed in simultaneously",
+      "status": "PASS",
+      "detail": "hr=Overview\nHR · MTO programme · MTO Compas trainee=Hi, Nusrat\n3\nWednesday 25 November · MTO",
+      "at": "2026-11-25T00:45:41.314Z"
+    },
+    {
+      "phase": "PHASE 4 — Routes & Interactive Elements",
+      "name": "trainee route / renders",
+      "status": "PASS",
+      "detail": "Hi, Nusrat | 3 | Wednesday 25 November · MTO · Marketing | Rotatio",
+      "at": "2026-11-25T00:46:08.786Z"
+    },
+    {
+      "phase": "PHASE 4 — Routes & Interactive Elements",
+      "name": "trainee route / no horizontal overflow",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:46:08.786Z"
+    },
+    {
+      "phase": "PHASE 4 — Routes & Interactive Elements",
+      "name": "trainee route /rotation renders",
+      "status": "PASS",
+      "detail": "Rotation | 3 | 12-month programme | Rotation | 1 · Finance | Done | Jan ",
+      "at": "2026-11-25T00:46:17.810Z"
+    },
+    {
+      "phase": "PHASE 4 — Routes & Interactive Elements",
+      "name": "trainee route /rotation no horizontal overflow",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:46:17.810Z"
+    },
+    {
+      "phase": "PHASE 4 — Routes & Interactive Elements",
+      "name": "trainee route /log renders",
+      "status": "PASS",
+      "detail": "Log | 3 | Daily work log | Log | What did you work on? | Tags | Marketin",
+      "at": "2026-11-25T00:46:26.865Z"
+    },
+    {
+      "phase": "PHASE 4 — Routes & Interactive Elements",
+      "name": "trainee route /log no horizontal overflow",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:46:26.866Z"
+    },
+    {
+      "phase": "PHASE 4 — Routes & Interactive Elements",
+      "name": "trainee route /growth renders",
+      "status": "PASS",
+      "detail": "Growth | 3 | Goals & feedback | Growth | Learning goals | + Add | Excel ",
+      "at": "2026-11-25T00:46:35.682Z"
+    },
+    {
+      "phase": "PHASE 4 — Routes & Interactive Elements",
+      "name": "trainee route /growth no horizontal overflow",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:46:35.682Z"
+    },
+    {
+      "phase": "PHASE 4 — Routes & Interactive Elements",
+      "name": "trainee route /me renders",
+      "status": "PASS",
+      "detail": "Me | 3 | Profile | Me | NJ | Nusrat Jahan | MTO | MTO · Marketing · MTO Co",
+      "at": "2026-11-25T00:46:44.796Z"
+    },
+    {
+      "phase": "PHASE 4 — Routes & Interactive Elements",
+      "name": "trainee route /me no horizontal overflow",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:46:44.796Z"
+    },
+    {
+      "phase": "PHASE 4 — Routes & Interactive Elements",
+      "name": "trainee has notification bell",
+      "status": "PASS",
+      "detail": "buttons=1",
+      "at": "2026-11-25T00:46:44.811Z"
+    },
+    {
+      "phase": "PHASE 4 — Routes & Interactive Elements",
+      "name": "hr route / renders",
+      "status": "PASS",
+      "detail": "Overview | HR · MTO programme · MTO Compass Demo | Overview | 5 | Ac",
+      "at": "2026-11-25T00:47:11.898Z"
+    },
+    {
+      "phase": "PHASE 4 — Routes & Interactive Elements",
+      "name": "hr route / no horizontal overflow",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:47:11.898Z"
+    },
+    {
+      "phase": "PHASE 4 — Routes & Interactive Elements",
+      "name": "hr route /trainees renders",
+      "status": "PASS",
+      "detail": "Trainees | 5 active | NJ | Nusrat Jahan | Marketing · Wk 12 | 52 | % | MA | ",
+      "at": "2026-11-25T00:47:20.864Z"
+    },
+    {
+      "phase": "PHASE 4 — Routes & Interactive Elements",
+      "name": "hr route /trainees no horizontal overflow",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:47:20.864Z"
+    },
+    {
+      "phase": "PHASE 4 — Routes & Interactive Elements",
+      "name": "hr route /reviews renders",
+      "status": "PASS",
+      "detail": "Reviews | Pending (2) | Decided | Nusrat Jahan | Due Fri | Marketing ·",
+      "at": "2026-11-25T00:47:29.852Z"
+    },
+    {
+      "phase": "PHASE 4 — Routes & Interactive Elements",
+      "name": "hr route /reviews no horizontal overflow",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:47:29.852Z"
+    },
+    {
+      "phase": "PHASE 4 — Routes & Interactive Elements",
+      "name": "hr route /reports renders",
+      "status": "PASS",
+      "detail": "Reports | Programme insights | Reports | 5 | Trainees | 3 | Logs this we",
+      "at": "2026-11-25T00:47:38.753Z"
+    },
+    {
+      "phase": "PHASE 4 — Routes & Interactive Elements",
+      "name": "hr route /reports no horizontal overflow",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:47:38.753Z"
+    },
+    {
+      "phase": "PHASE 4 — Routes & Interactive Elements",
+      "name": "hr route /settings renders",
+      "status": "PASS",
+      "detail": "Settings | Admin | Settings | Company | MTO Compass Demo | Invite code",
+      "at": "2026-11-25T00:47:47.830Z"
+    },
+    {
+      "phase": "PHASE 4 — Routes & Interactive Elements",
+      "name": "hr route /settings no horizontal overflow",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:47:47.830Z"
+    },
+    {
+      "phase": "PHASE 4 — Routes & Interactive Elements",
+      "name": "platform route /platform renders",
+      "status": "PASS",
+      "detail": "Platform | Sign out | Platform operator console | OpsHub estate | Co",
+      "at": "2026-11-25T00:48:15.136Z"
+    },
+    {
+      "phase": "PHASE 4 — Routes & Interactive Elements",
+      "name": "platform route /platform no horizontal overflow",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:48:15.136Z"
+    },
+    {
+      "phase": "PHASE 4 — Routes & Interactive Elements",
+      "name": "platform route /platform/tenants renders",
+      "status": "PASS",
+      "detail": "Companies | QA Compass 7462346 | active | qa-compass-7462346 · 2 m",
+      "at": "2026-11-25T00:48:24.071Z"
+    },
+    {
+      "phase": "PHASE 4 — Routes & Interactive Elements",
+      "name": "platform route /platform/tenants no horizontal overflow",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:48:24.071Z"
+    },
+    {
+      "phase": "PHASE 4 — Routes & Interactive Elements",
+      "name": "feature inventory captured",
+      "status": "PASS",
+      "detail": "12 routes",
+      "at": "2026-11-25T00:48:24.473Z"
+    },
+    {
+      "phase": "PHASE 5 — Trainee CRUD & Database Verification",
+      "name": "save log disabled with empty text",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:48:51.104Z"
+    },
+    {
+      "phase": "PHASE 5 — Trainee CRUD & Database Verification",
+      "name": "tag chip becomes active when clicked",
+      "status": "PASS",
+      "detail": "css-text-146c3p1 text-xs leading-4 font-normal text-accent-foreground",
+      "at": "2026-11-25T00:48:51.209Z"
+    },
+    {
+      "phase": "PHASE 5 — Trainee CRUD & Database Verification",
+      "name": "log created via UI appears in API state",
+      "status": "PASS",
+      "detail": "status=200",
+      "at": "2026-11-25T00:48:52.498Z"
+    },
+    {
+      "phase": "PHASE 5 — Trainee CRUD & Database Verification",
+      "name": "created log keeps selected tag",
+      "status": "PASS",
+      "detail": "[\"Marketing\"]",
+      "at": "2026-11-25T00:48:52.498Z"
+    },
+    {
+      "phase": "PHASE 5 — Trainee CRUD & Database Verification",
+      "name": "created log belongs to signed-in trainee",
+      "status": "PASS",
+      "detail": "usr_nusrat",
+      "at": "2026-11-25T00:48:52.498Z"
+    },
+    {
+      "phase": "PHASE 5 — Trainee CRUD & Database Verification",
+      "name": "created log visible in UI",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:48:52.507Z"
+    },
+    {
+      "phase": "PHASE 5 — Trainee CRUD & Database Verification",
+      "name": "log persists after browser refresh",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:49:01.879Z"
+    },
+    {
+      "phase": "PHASE 5 — Trainee CRUD & Database Verification",
+      "name": "log persists in database/API after refresh",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:49:01.894Z"
+    },
+    {
+      "phase": "PHASE 5 — Trainee CRUD & Database Verification",
+      "name": "log detail modal opens",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:49:02.489Z"
+    },
+    {
+      "phase": "PHASE 5 — Trainee CRUD & Database Verification",
+      "name": "cancel/close does not delete log",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:49:02.970Z"
+    },
+    {
+      "phase": "PHASE 5 — Trainee CRUD & Database Verification",
+      "name": "add task opens a title form (not a fake default task)",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:49:13.087Z"
+    },
+    {
+      "phase": "PHASE 5 — Trainee CRUD & Database Verification",
+      "name": "task created with user-entered title",
+      "status": "PASS",
+      "detail": "before=6 after=7",
+      "at": "2026-11-25T00:49:14.311Z"
+    },
+    {
+      "phase": "PHASE 5 — Trainee CRUD & Database Verification",
+      "name": "task toggle persisted to API",
+      "status": "PASS",
+      "detail": "done=true",
+      "at": "2026-11-25T00:49:14.787Z"
+    },
+    {
+      "phase": "PHASE 5 — Trainee CRUD & Database Verification",
+      "name": "goal created via UI persists in API",
+      "status": "PASS",
+      "detail": "count=6",
+      "at": "2026-11-25T00:49:25.613Z"
+    },
+    {
+      "phase": "PHASE 5 — Trainee CRUD & Database Verification",
+      "name": "goal progress +10% persisted",
+      "status": "PASS",
+      "detail": "progress=10",
+      "at": "2026-11-25T00:49:26.592Z"
+    },
+    {
+      "phase": "PHASE 5 — Trainee CRUD & Database Verification",
+      "name": "API has an active rotation",
+      "status": "PASS",
+      "detail": "Marketing",
+      "at": "2026-11-25T00:49:35.625Z"
+    },
+    {
+      "phase": "PHASE 5 — Trainee CRUD & Database Verification",
+      "name": "objective toggle persisted to API",
+      "status": "PASS",
+      "detail": "done=true",
+      "at": "2026-11-25T00:49:37.150Z"
+    },
+    {
+      "phase": "PHASE 5 — Trainee CRUD & Database Verification",
+      "name": "CSV export triggers real download",
+      "status": "PASS",
+      "detail": "my-logs-export.csv",
+      "at": "2026-11-25T00:49:46.274Z"
+    },
+    {
+      "phase": "PHASE 5 — Trainee CRUD & Database Verification",
+      "name": "CSV contains header and log rows",
+      "status": "PASS",
+      "detail": "10 lines",
+      "at": "2026-11-25T00:49:46.488Z"
+    },
+    {
+      "phase": "PHASE 5 — Trainee CRUD & Database Verification",
+      "name": "notification sheet opens from bell",
+      "status": "PASS",
+      "detail": "Growth\n3\nGoals & feedback\nGrowth\nLearning goals\n+ Add\nExcel for business\n70%\n+10% progress\nBusiness writing (Bangla/Engl",
+      "at": "2026-11-25T00:49:47.111Z"
+    },
+    {
+      "phase": "PHASE 5 — Trainee CRUD & Database Verification",
+      "name": "mark all read persists via API",
+      "status": "PASS",
+      "detail": "0 unread remain",
+      "at": "2026-11-25T00:49:48.070Z"
+    },
+    {
+      "phase": "PHASE 5 — Trainee CRUD & Database Verification",
+      "name": "trainee cannot change workspace language",
+      "status": "PASS",
+      "detail": "en → en",
+      "at": "2026-11-25T00:49:57.644Z"
+    },
+    {
+      "phase": "PHASE 5-7 — HR Workflows & Advanced Features",
+      "name": "HR state endpoint returns reports + trainees",
+      "status": "PASS",
+      "detail": "reports=true",
+      "at": "2026-11-25T00:50:25.734Z"
+    },
+    {
+      "phase": "PHASE 5-7 — HR Workflows & Advanced Features",
+      "name": "HR overview shows real trainee count",
+      "status": "PASS",
+      "detail": "5",
+      "at": "2026-11-25T00:50:25.758Z"
+    },
+    {
+      "phase": "PHASE 5-7 — HR Workflows & Advanced Features",
+      "name": "trainee search filters by name",
+      "status": "PASS",
+      "detail": "Trainees\n5 active\nNJ\nNusrat Jahan\nMarketing · Wk 12\n58\n%\n+\nOverview\nTrainees\nReviews\nReports\nSettings",
+      "at": "2026-11-25T00:50:35.667Z"
+    },
+    {
+      "phase": "PHASE 5-7 — HR Workflows & Advanced Features",
+      "name": "trainee search filters by department",
+      "status": "PASS",
+      "detail": "Trainees\n5 active\nTH\nTanvir Hasan\nFinance · Wk 12\n25\n%\n+\nOverview\nTrainees\nReviews\nReports\nSettings",
+      "at": "2026-11-25T00:50:36.215Z"
+    },
+    {
+      "phase": "PHASE 5-7 — HR Workflows & Advanced Features",
+      "name": "trainee detail sheet opens with reminder action",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:50:37.276Z"
+    },
+    {
+      "phase": "PHASE 5-7 — HR Workflows & Advanced Features",
+      "name": "reminder confirmation shown",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:50:38.038Z"
+    },
+    {
+      "phase": "PHASE 5-7 — HR Workflows & Advanced Features",
+      "name": "reminder creates notification in trainee account",
+      "status": "PASS",
+      "detail": "count=9",
+      "at": "2026-11-25T00:50:38.046Z"
+    },
+    {
+      "phase": "PHASE 5-7 — HR Workflows & Advanced Features",
+      "name": "new review sheet opens from FAB",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:50:47.750Z"
+    },
+    {
+      "phase": "PHASE 5-7 — HR Workflows & Advanced Features",
+      "name": "review created and stored in API",
+      "status": "PASS",
+      "detail": "count=7",
+      "at": "2026-11-25T00:50:49.002Z"
+    },
+    {
+      "phase": "PHASE 5-7 — HR Workflows & Advanced Features",
+      "name": "HR has a pending review to decide",
+      "status": "PASS",
+      "detail": "Nusrat Jahan",
+      "at": "2026-11-25T00:50:58.107Z"
+    },
+    {
+      "phase": "PHASE 5-7 — HR Workflows & Advanced Features",
+      "name": "approve disabled until rating chosen",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:50:58.629Z"
+    },
+    {
+      "phase": "PHASE 5-7 — HR Workflows & Advanced Features",
+      "name": "review approval persisted with rating + comment",
+      "status": "PASS",
+      "detail": "{\"traineeId\":\"usr_nusrat\",\"traineeName\":\"Nusrat Jahan\",\"dept\":\"Marketing\",\"kind\":\"evaluation\",\"due\":\"Due Fri\",\"status\":\"approved\",\"rating\":4,\"comment\":\"QA approved 816503\",\"id\":\"rvw_mwveqiehixsvid\",\"tenantId\":\"tnt_demo\",",
+      "at": "2026-11-25T00:51:00.155Z"
+    },
+    {
+      "phase": "PHASE 5-7 — HR Workflows & Advanced Features",
+      "name": "reports API returns weekly + dept analytics",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:51:09.175Z"
+    },
+    {
+      "phase": "PHASE 5-7 — HR Workflows & Advanced Features",
+      "name": "HR CSV export downloads",
+      "status": "PASS",
+      "detail": "mto-logs-export.csv",
+      "at": "2026-11-25T00:51:09.249Z"
+    },
+    {
+      "phase": "PHASE 5-7 — HR Workflows & Advanced Features",
+      "name": "HR sees invite code from API",
+      "status": "PASS",
+      "detail": "MTO-DEMO-2026",
+      "at": "2026-11-25T00:51:18.710Z"
+    },
+    {
+      "phase": "PHASE 5-7 — HR Workflows & Advanced Features",
+      "name": "invite code rendered in settings UI",
+      "status": "PASS",
+      "detail": "MTO-DEMO-2026",
+      "at": "2026-11-25T00:51:18.732Z"
+    },
+    {
+      "phase": "PHASE 5-7 — HR Workflows & Advanced Features",
+      "name": "programme length change persisted",
+      "status": "PASS",
+      "detail": "18 → 18",
+      "at": "2026-11-25T00:51:19.686Z"
+    },
+    {
+      "phase": "PHASE 5-7 — HR Workflows & Advanced Features",
+      "name": "trainees-export toggle persisted",
+      "status": "PASS",
+      "detail": "true → false",
+      "at": "2026-11-25T00:51:20.638Z"
+    },
+    {
+      "phase": "PHASE 4-8 — Platform Console & Tenant Lifecycle",
+      "name": "platform overview API works",
+      "status": "PASS",
+      "detail": "{\"tenants\":{\"total\":26,\"active\":24,\"suspended\":2},\"users\":58,\"logs\":13,\"rotations\":100,\"reviews\":16,\"pendingReviews\":6}",
+      "at": "2026-11-25T00:51:50.673Z"
+    },
+    {
+      "phase": "PHASE 4-8 — Platform Console & Tenant Lifecycle",
+      "name": "platform UI shows real \"Companies\" from API",
+      "status": "PASS",
+      "detail": "API=26",
+      "at": "2026-11-25T00:51:50.696Z"
+    },
+    {
+      "phase": "PHASE 4-8 — Platform Console & Tenant Lifecycle",
+      "name": "platform UI shows real \"Users\" from API",
+      "status": "PASS",
+      "detail": "API=58",
+      "at": "2026-11-25T00:51:50.696Z"
+    },
+    {
+      "phase": "PHASE 4-8 — Platform Console & Tenant Lifecycle",
+      "name": "platform UI shows real \"Rotations\" from API",
+      "status": "PASS",
+      "detail": "API=100",
+      "at": "2026-11-25T00:51:50.696Z"
+    },
+    {
+      "phase": "PHASE 4-8 — Platform Console & Tenant Lifecycle",
+      "name": "platform UI shows real \"Reviews\" from API",
+      "status": "PASS",
+      "detail": "API=16",
+      "at": "2026-11-25T00:51:50.696Z"
+    },
+    {
+      "phase": "PHASE 4-8 — Platform Console & Tenant Lifecycle",
+      "name": "platform UI shows real \"Pending reviews\" from API",
+      "status": "PASS",
+      "detail": "API=6",
+      "at": "2026-11-25T00:51:50.696Z"
+    },
+    {
+      "phase": "PHASE 4-8 — Platform Console & Tenant Lifecycle",
+      "name": "tenants API returns counts",
+      "status": "PASS",
+      "detail": "count=26",
+      "at": "2026-11-25T00:51:59.912Z"
+    },
+    {
+      "phase": "PHASE 4-8 — Platform Console & Tenant Lifecycle",
+      "name": "tenant row shows real member count",
+      "status": "PASS",
+      "detail": "users=2",
+      "at": "2026-11-25T00:51:59.937Z"
+    },
+    {
+      "phase": "PHASE 4-8 — Platform Console & Tenant Lifecycle",
+      "name": "throwaway tenant created for lifecycle test",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:52:08.445Z"
+    },
+    {
+      "phase": "PHASE 4-8 — Platform Console & Tenant Lifecycle",
+      "name": "new tenant visible to platform console",
+      "status": "PASS",
+      "detail": "QA Lifecycle 7927971",
+      "at": "2026-11-25T00:52:25.705Z"
+    },
+    {
+      "phase": "PHASE 4-8 — Platform Console & Tenant Lifecycle",
+      "name": "tenant suspended via UI + confirm",
+      "status": "PASS",
+      "detail": "suspended",
+      "at": "2026-11-25T00:52:36.741Z"
+    },
+    {
+      "phase": "PHASE 4-8 — Platform Console & Tenant Lifecycle",
+      "name": "suspended tenant user is blocked from login",
+      "status": "PASS",
+      "detail": "HTTP 401",
+      "at": "2026-11-25T00:52:36.816Z"
+    },
+    {
+      "phase": "PHASE 4-8 — Platform Console & Tenant Lifecycle",
+      "name": "tenant reactivated via UI",
+      "status": "PASS",
+      "detail": "active",
+      "at": "2026-11-25T00:52:47.682Z"
+    },
+    {
+      "phase": "PHASE 4-8 — Platform Console & Tenant Lifecycle",
+      "name": "reactivated tenant user can sign in again",
+      "status": "PASS",
+      "detail": "HTTP 201",
+      "at": "2026-11-25T00:52:47.754Z"
+    },
+    {
+      "phase": "PHASE 4-8 — Platform Console & Tenant Lifecycle",
+      "name": "HR denied platform API",
+      "status": "PASS",
+      "detail": "HTTP 403",
+      "at": "2026-11-25T00:53:04.948Z"
+    },
+    {
+      "phase": "PHASE 8 — Security & Data Integrity",
+      "name": "unauthenticated /state returns 401",
+      "status": "PASS",
+      "detail": "HTTP 401",
+      "at": "2026-11-25T00:53:06.626Z"
+    },
+    {
+      "phase": "PHASE 8 — Security & Data Integrity",
+      "name": "unauthenticated /logs returns 401",
+      "status": "PASS",
+      "detail": "HTTP 401",
+      "at": "2026-11-25T00:53:06.630Z"
+    },
+    {
+      "phase": "PHASE 8 — Security & Data Integrity",
+      "name": "unauthenticated /rotations returns 401",
+      "status": "PASS",
+      "detail": "HTTP 401",
+      "at": "2026-11-25T00:53:06.633Z"
+    },
+    {
+      "phase": "PHASE 8 — Security & Data Integrity",
+      "name": "unauthenticated /mto-tasks returns 401",
+      "status": "PASS",
+      "detail": "HTTP 401",
+      "at": "2026-11-25T00:53:06.636Z"
+    },
+    {
+      "phase": "PHASE 8 — Security & Data Integrity",
+      "name": "unauthenticated /goals returns 401",
+      "status": "PASS",
+      "detail": "HTTP 401",
+      "at": "2026-11-25T00:53:06.639Z"
+    },
+    {
+      "phase": "PHASE 8 — Security & Data Integrity",
+      "name": "unauthenticated /reviews returns 401",
+      "status": "PASS",
+      "detail": "HTTP 401",
+      "at": "2026-11-25T00:53:06.642Z"
+    },
+    {
+      "phase": "PHASE 8 — Security & Data Integrity",
+      "name": "unauthenticated /notifications returns 401",
+      "status": "PASS",
+      "detail": "HTTP 401",
+      "at": "2026-11-25T00:53:06.644Z"
+    },
+    {
+      "phase": "PHASE 8 — Security & Data Integrity",
+      "name": "unauthenticated /programme returns 401",
+      "status": "PASS",
+      "detail": "HTTP 401",
+      "at": "2026-11-25T00:53:06.647Z"
+    },
+    {
+      "phase": "PHASE 8 — Security & Data Integrity",
+      "name": "unauthenticated /platform/overview returns 401",
+      "status": "PASS",
+      "detail": "HTTP 401",
+      "at": "2026-11-25T00:53:06.650Z"
+    },
+    {
+      "phase": "PHASE 8 — Security & Data Integrity",
+      "name": "unauthenticated /audit returns 401",
+      "status": "PASS",
+      "detail": "HTTP 401",
+      "at": "2026-11-25T00:53:06.653Z"
+    },
+    {
+      "phase": "PHASE 8 — Security & Data Integrity",
+      "name": "unauthenticated /users returns 401",
+      "status": "PASS",
+      "detail": "HTTP 401",
+      "at": "2026-11-25T00:53:06.657Z"
+    },
+    {
+      "phase": "PHASE 8 — Security & Data Integrity",
+      "name": "seeded role logins via API succeed",
+      "status": "PASS",
+      "detail": "hr=201 n=201 t=201",
+      "at": "2026-11-25T00:53:06.881Z"
+    },
+    {
+      "phase": "PHASE 8 — Security & Data Integrity",
+      "name": "login with empty body rejected",
+      "status": "PASS",
+      "detail": "HTTP 401",
+      "at": "2026-11-25T00:53:06.883Z"
+    },
+    {
+      "phase": "PHASE 8 — Security & Data Integrity",
+      "name": "short password rejected on registration",
+      "status": "PASS",
+      "detail": "HTTP 400",
+      "at": "2026-11-25T00:53:06.886Z"
+    },
+    {
+      "phase": "PHASE 8 — Security & Data Integrity",
+      "name": "trainee cannot create review",
+      "status": "PASS",
+      "detail": "HTTP 403",
+      "at": "2026-11-25T00:53:06.890Z"
+    },
+    {
+      "phase": "PHASE 8 — Security & Data Integrity",
+      "name": "trainee cannot change programme settings",
+      "status": "PASS",
+      "detail": "HTTP 400",
+      "at": "2026-11-25T00:53:06.896Z"
+    },
+    {
+      "phase": "PHASE 8 — Security & Data Integrity",
+      "name": "trainee cannot create users",
+      "status": "PASS",
+      "detail": "HTTP 403",
+      "at": "2026-11-25T00:53:06.901Z"
+    },
+    {
+      "phase": "PHASE 8 — Security & Data Integrity",
+      "name": "trainee cannot read audit log",
+      "status": "PASS",
+      "detail": "HTTP 403",
+      "at": "2026-11-25T00:53:06.906Z"
+    },
+    {
+      "phase": "PHASE 8 — Security & Data Integrity",
+      "name": "HR can read audit log",
+      "status": "PASS",
+      "detail": "HTTP 200",
+      "at": "2026-11-25T00:53:06.912Z"
+    },
+    {
+      "phase": "PHASE 8 — Security & Data Integrity",
+      "name": "trainee cannot DELETE another trainee's log (IDOR)",
+      "status": "PASS",
+      "detail": "HTTP 404",
+      "at": "2026-11-25T00:53:06.933Z"
+    },
+    {
+      "phase": "PHASE 8 — Security & Data Integrity",
+      "name": "victim log still exists after IDOR attempt",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:53:06.939Z"
+    },
+    {
+      "phase": "PHASE 8 — Security & Data Integrity",
+      "name": "trainee cannot UPDATE another trainee's log (IDOR)",
+      "status": "PASS",
+      "detail": "HTTP 404",
+      "at": "2026-11-25T00:53:06.945Z"
+    },
+    {
+      "phase": "PHASE 8 — Security & Data Integrity",
+      "name": "trainee state contains only own logs",
+      "status": "PASS",
+      "detail": "9 logs",
+      "at": "2026-11-25T00:53:06.945Z"
+    },
+    {
+      "phase": "PHASE 8 — Security & Data Integrity",
+      "name": "trainee state contains only own tasks",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:53:06.945Z"
+    },
+    {
+      "phase": "PHASE 8 — Security & Data Integrity",
+      "name": "HR cannot decide another tenant's review",
+      "status": "PASS",
+      "detail": "HTTP 404",
+      "at": "2026-11-25T00:53:07.039Z"
+    },
+    {
+      "phase": "PHASE 8 — Security & Data Integrity",
+      "name": "XSS payload does not execute in UI",
+      "status": "PASS",
+      "detail": "flag=false dialog=false",
+      "at": "2026-11-25T00:53:34.587Z"
+    },
+    {
+      "phase": "PHASE 8 — Security & Data Integrity",
+      "name": "XSS payload stored literally (not sanitized into markup)",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:53:34.596Z"
+    },
+    {
+      "phase": "PHASE 8 — Security & Data Integrity",
+      "name": "QA XSS test log cleaned up",
+      "status": "PASS",
+      "detail": "HTTP 201",
+      "at": "2026-11-25T00:53:34.620Z"
+    },
+    {
+      "phase": "PHASE 8 — Security & Data Integrity",
+      "name": "no auth token stored in browser cookies",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:53:34.621Z"
+    },
+    {
+      "phase": "PHASE 8 — Security & Data Integrity",
+      "name": "JWT not embedded in page HTML",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:53:34.639Z"
+    },
+    {
+      "phase": "PHASE 8 — Security & Data Integrity",
+      "name": "malformed JSON returns 400",
+      "status": "PASS",
+      "detail": "HTTP 400",
+      "at": "2026-11-25T00:53:34.687Z"
+    },
+    {
+      "phase": "PHASE 9 — Responsive UI",
+      "name": "desktop 1440x1000: sign-in no horizontal overflow",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:53:42.709Z"
+    },
+    {
+      "phase": "PHASE 9 — Responsive UI",
+      "name": "desktop: trainee / no horizontal overflow",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:54:06.155Z"
+    },
+    {
+      "phase": "PHASE 9 — Responsive UI",
+      "name": "desktop: trainee /log no horizontal overflow",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:54:14.118Z"
+    },
+    {
+      "phase": "PHASE 9 — Responsive UI",
+      "name": "desktop: trainee /growth no horizontal overflow",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:54:22.074Z"
+    },
+    {
+      "phase": "PHASE 9 — Responsive UI",
+      "name": "desktop: HR reviews no horizontal overflow",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:54:47.357Z"
+    },
+    {
+      "phase": "PHASE 9 — Responsive UI",
+      "name": "desktop: platform tenants no horizontal overflow",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:55:11.296Z"
+    },
+    {
+      "phase": "PHASE 9 — Responsive UI",
+      "name": "laptop 1366x768: sign-in no horizontal overflow",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:55:19.248Z"
+    },
+    {
+      "phase": "PHASE 9 — Responsive UI",
+      "name": "laptop: trainee / no horizontal overflow",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:55:42.316Z"
+    },
+    {
+      "phase": "PHASE 9 — Responsive UI",
+      "name": "laptop: trainee /log no horizontal overflow",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:55:49.728Z"
+    },
+    {
+      "phase": "PHASE 9 — Responsive UI",
+      "name": "laptop: trainee /growth no horizontal overflow",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:55:57.115Z"
+    },
+    {
+      "phase": "PHASE 9 — Responsive UI",
+      "name": "laptop: HR reviews no horizontal overflow",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:56:20.617Z"
+    },
+    {
+      "phase": "PHASE 9 — Responsive UI",
+      "name": "laptop: platform tenants no horizontal overflow",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:56:43.864Z"
+    },
+    {
+      "phase": "PHASE 9 — Responsive UI",
+      "name": "tablet 768x1024: sign-in no horizontal overflow",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:56:51.546Z"
+    },
+    {
+      "phase": "PHASE 9 — Responsive UI",
+      "name": "tablet: trainee / no horizontal overflow",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:57:14.653Z"
+    },
+    {
+      "phase": "PHASE 9 — Responsive UI",
+      "name": "tablet: trainee /log no horizontal overflow",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:57:22.105Z"
+    },
+    {
+      "phase": "PHASE 9 — Responsive UI",
+      "name": "tablet: trainee /growth no horizontal overflow",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:57:29.830Z"
+    },
+    {
+      "phase": "PHASE 9 — Responsive UI",
+      "name": "tablet: HR reviews no horizontal overflow",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:57:53.239Z"
+    },
+    {
+      "phase": "PHASE 9 — Responsive UI",
+      "name": "tablet: platform tenants no horizontal overflow",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:58:16.282Z"
+    },
+    {
+      "phase": "PHASE 9 — Responsive UI",
+      "name": "mobile 390x844: sign-in no horizontal overflow",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:58:24.176Z"
+    },
+    {
+      "phase": "PHASE 9 — Responsive UI",
+      "name": "mobile: trainee / no horizontal overflow",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:58:47.285Z"
+    },
+    {
+      "phase": "PHASE 9 — Responsive UI",
+      "name": "mobile: trainee /log no horizontal overflow",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:58:54.754Z"
+    },
+    {
+      "phase": "PHASE 9 — Responsive UI",
+      "name": "mobile: trainee /growth no horizontal overflow",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:59:02.387Z"
+    },
+    {
+      "phase": "PHASE 9 — Responsive UI",
+      "name": "mobile: HR reviews no horizontal overflow",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:59:25.639Z"
+    },
+    {
+      "phase": "PHASE 9 — Responsive UI",
+      "name": "mobile: platform tenants no horizontal overflow",
+      "status": "PASS",
+      "detail": "",
+      "at": "2026-11-25T00:59:48.467Z"
+    }
+  ],
+  "events": [
+    {
+      "kind": "http-401",
+      "phase": "PHASE 3 — Authentication & Authorization",
+      "at": "2026-11-25T00:43:21.767Z",
+      "detail": "[auth-flow] POST http://localhost:3101/api/auth/login"
+    },
+    {
+      "kind": "console-error",
+      "phase": "PHASE 3 — Authentication & Authorization",
+      "at": "2026-11-25T00:43:21.767Z",
+      "detail": "[auth-flow] Failed to load resource: the server responded with a status of 401 (Unauthorized)"
+    },
+    {
+      "kind": "http-409",
+      "phase": "PHASE 3 — Authentication & Authorization",
+      "at": "2026-11-25T00:44:39.692Z",
+      "detail": "[auth-flow] POST http://localhost:3101/api/auth/register"
+    },
+    {
+      "kind": "console-error",
+      "phase": "PHASE 3 — Authentication & Authorization",
+      "at": "2026-11-25T00:44:39.692Z",
+      "detail": "[auth-flow] Failed to load resource: the server responded with a status of 409 (Conflict)"
+    },
+    {
+      "kind": "http-400",
+      "phase": "PHASE 3 — Authentication & Authorization",
+      "at": "2026-11-25T00:44:47.296Z",
+      "detail": "[auth-flow] POST http://localhost:3101/api/auth/join"
+    },
+    {
+      "kind": "console-error",
+      "phase": "PHASE 3 — Authentication & Authorization",
+      "at": "2026-11-25T00:44:47.296Z",
+      "detail": "[auth-flow] Failed to load resource: the server responded with a status of 400 (Bad Request)"
+    },
+    {
+      "kind": "http-403",
+      "phase": "PHASE 3 — Authentication & Authorization",
+      "at": "2026-11-25T00:45:04.719Z",
+      "detail": "[auth-flow] GET http://localhost:3101/api/platform/overview"
+    },
+    {
+      "kind": "console-error",
+      "phase": "PHASE 3 — Authentication & Authorization",
+      "at": "2026-11-25T00:45:04.720Z",
+      "detail": "[auth-flow] Failed to load resource: the server responded with a status of 403 (Forbidden)"
+    },
+    {
+      "kind": "inventory",
+      "phase": "PHASE 4 — Routes & Interactive Elements",
+      "at": "2026-11-25T00:48:24.473Z",
+      "detail": "12 routes inventoried → tests/reports/feature-inventory.json"
+    }
+  ]
+}
